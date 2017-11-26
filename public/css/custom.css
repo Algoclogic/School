@@ -1,0 +1,16 @@
+.three-hpx{
+	width:300px;
+}
+.margin-tenpx-top a{
+    margin:15px 0 -12px 4px; 
+    }
+.margin-tenpx-top label:hover{
+    color:#0F0;
+    text-decoration: underline;
+}
+
+/*.bg-light #collapseOne{
+	overflow: auto;
+	display: block;
+	height: 200px;
+}*/
