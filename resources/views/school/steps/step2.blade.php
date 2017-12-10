@@ -70,10 +70,22 @@
                                         </div>         
                                     </div>
                                 </div>    
-                            </div>    
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="tblue">Total:-</span> 
+
+                                </div>
+                                <div class="col-md-3">
+                                     <span class="tblue">Total:-</span>           
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="tblue">Total:-</span>
+                                </div>
+                            </div>   
                         </div>
                     </div>
-                    
+
                     <div class="hpanel hviolet" style="">
                         <div class="panel-heading b">
                             <span class="tblue">10TH CLASS</span>
@@ -137,6 +149,19 @@
                                 </div>
                                 </div>    
                             </div> 
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="tblue">Total:-</span> 
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                     <span class="tblue">Total:-</span>           
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="tblue">Total:-</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
