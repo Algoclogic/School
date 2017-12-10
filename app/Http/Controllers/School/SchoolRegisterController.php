@@ -47,7 +47,34 @@ class SchoolRegisterController extends Controller{
      */
     public function partTwoSchoolRegistrationForm(){
 
-        return view('school.schoolPartTwoRegistration');
+        $mainsubjects_9   = main_subjects(null,9);
+        $mainsubjects_10 =  main_subjects(null,10);
+
+        $vocational_9  =  vocational_subjects(null,9);
+        $vocational_10 =  vocational_subjects(null,10);
+
+        $optional_9  =  optional_subjects(null,9);
+        $optional_10 =  optional_subjects(null,10);
+
+
+
+
+
+        $mainSubjects = array(
+             'subject_9th' => $mainsubjects_9,
+             'subject_10th' => $mainsubjects_10,
+
+             'vocational_9th' => $vocational_9,
+             'vocational_10th' => $vocational_10, 
+
+             'optional_9th' =>   $optional_9,
+             'optional_10th' =>  $optional_10,
+            
+            );
+
+
+
+        return view('school.schoolPartTwoRegistration')->with($mainSubjects);  
         
     }
     /**

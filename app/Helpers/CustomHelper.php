@@ -237,3 +237,157 @@ function convert_number_to_words($number) {
     return $string;
 }
 
+function main_subjects($key=null,$class){
+
+    $subject_9 = [
+
+    's1' => 'Subject_9TH 1',
+    's2' => 'Subject_9TH 2',
+    's3' => 'Subject_9TH 3',
+    's4' => 'Subject_9TH 4',
+    's5' => 'Subject_9TH 5',
+    's6' => 'Subject_9TH 6',
+    ];
+
+
+    $subject_10 = [
+
+    's1' => 'Subject_10TH 1',
+    's2' => 'Subject_10TH 2',
+    's3' => 'Subject_10TH 3',
+    's4' => 'Subject_10TH 4',
+    's5' => 'Subject_10TH 5',
+    's6' => 'Subject_10TH 6',
+    ];
+
+    if(!empty($key)){
+
+        switch ($class) {
+            case '10':
+                return $subject_10[$key];
+                break;
+            case '9':
+                return $subject_9[$key];
+                break;
+            
+        }
+    }
+    else{
+        switch ($class) {
+            case '10':
+                return $subject_10;
+                break;
+            case '9':
+                return $subject_9;
+                break;
+            
+        }
+
+    }
+
+
+}
+
+
+function vocational_subjects($key=null,$class){
+
+    $subject_9 = [
+
+    's1' => 'Subject_9TH v1',
+    's2' => 'Subject_9TH v2',
+    's3' => 'Subject_9TH v3',
+    's4' => 'Subject_9TH v4',
+    's5' => 'Subject_9TH v5',
+    's6' => 'Subject_9TH v6',
+    ];
+
+
+    $subject_10 = [
+
+    's1' => 'Subject_10TH v1',
+    's2' => 'Subject_10TH v2',
+    's3' => 'Subject_10TH v3',
+    's4' => 'Subject_10TH v4',
+    's5' => 'Subject_10TH v5',
+    's6' => 'Subject_10TH v6',
+    ];
+
+    if(!empty($key)){
+
+        switch ($class) {
+            case '10':
+                return $subject_10[$key];
+                break;
+            case '9':
+                return $subject_9[$key];
+                break;
+            
+        }
+    }
+    else{
+        switch ($class) {
+            case '10':
+                return $subject_10;
+                break;
+            case '9':
+                return $subject_9;
+                break;
+            
+        }
+
+    }
+
+
+}
+
+function optional_subjects($key=null,$class){
+
+    $subject_9 = [
+
+    's1' => 'Subject_9TH o1',
+    's2' => 'Subject_9TH o2',
+    's3' => 'Subject_9TH o3',
+    's4' => 'Subject_9TH o4',
+    's5' => 'Subject_9TH o5',
+    's6' => 'Subject_9TH o6',
+    ];
+
+
+    $subject_10 = [
+
+    's1' => 'Subject_10TH o1',
+    's2' => 'Subject_10TH o2',
+    's3' => 'Subject_10TH o3',
+    's4' => 'Subject_10TH o4',
+    's5' => 'Subject_10TH o5',
+    's6' => 'Subject_10TH o6',
+    ];
+
+    if(!empty($key)){
+
+        switch ($class) {
+            case '10':
+                return $subject_10[$key];
+                break;
+            case '9':
+                return $subject_9[$key];
+                break;
+            
+        }
+    }
+    else{
+        switch ($class) {
+            case '10':
+                return $subject_10;
+                break;
+            case '9':
+                return $subject_9;
+                break;
+            
+        }
+
+    }
+
+
+}
+

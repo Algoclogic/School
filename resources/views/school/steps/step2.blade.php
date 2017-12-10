@@ -21,62 +21,128 @@
                         </div>
                         <div class="panel-body">
                             <div class="col-lg-12">
-                                <div class="col-lg-3">a
+                                    
+                                <div class="col-lg-3">
+                                    <div class="col-md-12">
+                                        <span class="tblue">Main Subjects</span>
+                                    </div>
+                                 @foreach($subject_9th as $sub)
+                                     <div class="checkbox">
+                                      <label><input type="checkbox" value="">{{$sub}}</label>
+                                    </div>
+                                 @endforeach
                                 </div> 
-                                <div class="col-lg-3">a
+
+
+                                <div class="col-lg-3">
+                                    <div class="col-md-12">
+                                        <span class="tblue">Optional Subjects</span>
+                                    </div>
+
+                                   @foreach($optional_9th as $sub)
+                                         <div class="checkbox">
+                                          <label><input type="checkbox" value="">{{$sub}}</label>
+                                        </div>
+                                   @endforeach
                                 </div> 
-                                <div class="col-lg-3">a
+                                <div class="col-lg-3">
+                                    <div class="col-md-12">
+                                    <span class="tblue">Vocational Subjects</span>
+                                    </div>
+
+                                    @foreach($vocational_9th as $sub)
+                                     <div class="checkbox">
+                                      <label><input type="checkbox" value="">{{$sub}}</label>
+                                     </div>
+                                   @endforeach
                                 </div> 
-                                <div class="col-lg-3">a
+                                <div class="col-lg-3">
+                                    <div class="row">
+                                        <div class="form-inline">
+                                          <label for="usr" class="tblue">Intake Capacity</label>
+                                          <input type="text" class="form-control" id="usr">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-inline">
+                                          <label for="usr" class="tblue">Total Fee</label>
+                                          <input type="text" class="form-control" id="usr">
+                                        </div>         
+                                    </div>
                                 </div>    
                             </div>    
                         </div>
                     </div>
+                    
                     <div class="hpanel hviolet" style="">
                         <div class="panel-heading b">
                             <span class="tblue">10TH CLASS</span>
                         </div>
                         <div class="panel-body">
+                        
                             <div class="col-lg-12">
-                                <div class="col-lg-3">q
+                                <div class="col-lg-3">
+                                    <div class="col-md-12">
+                                    <span class="tblue">Main Subjects</span>
+                                    </div>
+
+                                    @foreach($subject_10th as $sub)
+                                     <div class="checkbox">
+                                      <label><input type="checkbox" value="">{{$sub}}</label>
+                                     </div>
+                                   @endforeach
+
+
                                 </div> 
-                                <div class="col-lg-3">q
+
+                                <div class="col-lg-3">
+                                     <div class="col-md-12">
+                                        <span class="tblue">Optional Subjects</span>
+                                        </div>
+
+                                        @foreach($optional_10th as $sub)
+                                         <div class="checkbox">
+                                          <label><input type="checkbox" value="">{{$sub}}</label>
+                                     </div>
+                                   @endforeach                      
                                 </div> 
-                                <div class="col-lg-3">q
+
+                                <div class="col-lg-3">
+                                    <div class="col-md-12">
+                                    <span class="tblue">Vocational Subjects</span>
+                                    </div>
+
+                                    @foreach($vocational_10th as $sub)
+                                     <div class="checkbox">
+                                      <label><input type="checkbox" value="">{{$sub}}</label>
+                                     </div>
+                                   @endforeach
                                 </div> 
-                                <div class="col-lg-3">q
+                                <div class="col-lg-3">
+                                    <div class="row">
+                                    <div class= 'col-md-12'>
+                                        <div class="form-inline">
+                                          <label for="usr" class="tblue">Intake Capacity</label>
+                                          <input type="text" class="form-control" id="usr">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-inline ">
+                                          <label for="usr" class="tblue">Total Fee</label>
+                                          <input type="text" class="form-control" id="usr">
+                                        </div>         
+                                    </div>
+                                </div>
                                 </div>    
                             </div> 
                         </div>
                     </div>
-                    <div class="form-group col-lg-12">
-                        <label>Name on Card</label>
-                        <input type="" value="" id="" class="form-control" name="card_name">
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label>Card Number</label>
-                        <input type="text" value="" id="" class="form-control" name="" name="card_number">
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label>Billing Address</label>
-                        <input type="text" value="" id="" class="form-control" name="" name="billing_address">
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <div class="row">
-                            <div class="col-xs-4 form-group">
-                                <label>CVC</label>
-                                <input class="form-control" placeholder="ex. 381"  type="text" name="cvc">
-                            </div>
-                            <div class="col-xs-4 form-group">
-                                <label>Expiration</label>
-                                <input class="form-control" placeholder="MM" type="text" name="expire_month">
-                            </div>
-                            <div class="col-xs-4 form-group">
-                                <label></label>
-                                <input class="form-control" placeholder="YYYY" type="text" name="expire_year">
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
+                    
+                    
                 </div>    
             </div>
         </div>
