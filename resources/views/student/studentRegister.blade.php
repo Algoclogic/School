@@ -57,7 +57,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            <strong>HOMER</strong> - AngularJS Responsive WebApp <br/> 2015 Copyright Company Name
+            <strong>HOMER</strong> - AngularJS Responsive WebApp <br/> {{ Carbon\carbon::now('Y')}} Copyright Company Name
         </div>
     </div>
 </div>

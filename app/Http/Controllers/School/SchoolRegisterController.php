@@ -21,8 +21,10 @@ class SchoolRegisterController extends Controller{
      *
      * @return \Illuminate\Http\Response
      */
-    public function districts(Request $request){
-        $key=$request->key;
+    public function districts(Request $request,$key){
+        //$division=$request->division;
+        // dd('here');
+       // dd($key);
         $divisions=districtList($key);
        //dd($divisions);
         return $divisions;
@@ -38,6 +40,22 @@ class SchoolRegisterController extends Controller{
     public function store(Request $request)
     {
         //
+    }
+
+    /**
+     *  part two registration of school form
+     */
+    public function partTwoSchoolRegistrationForm(){
+
+        return view('school.schoolPartTwoRegistration');
+        
+    }
+    /**
+     *  part two registration of school
+     */
+    public function partTwoSchoolRegistrationSave(Request $request){
+
+        
     }
 
     /**

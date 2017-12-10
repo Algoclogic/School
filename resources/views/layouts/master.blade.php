@@ -10,19 +10,11 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+        
+        <!-- Include css files -->
+        @include('links.css')
 
-        <!-- Vendor styles -->
-        <link rel="stylesheet" href="{{ asset('template/vendor/fontawesome/css/font-awesome.css') }}" />
-        <link rel="stylesheet" href="{{ asset('template/vendor/metisMenu/dist/metisMenu.css') }}" />
-        <link rel="stylesheet" href="{{ asset('template/vendor/animate.css/animate.css') }}" />
-        <link rel="stylesheet" href="{{ asset('template/vendor/bootstrap/dist/css/bootstrap.css') }}" />
-
-        <!-- App styles -->
-        <link rel="stylesheet" href="{{ asset('template/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}" />
-        <link rel="stylesheet" href="{{ asset('template/fonts/pe-icon-7-stroke/css/helper.css') }}" />
-        <link rel="stylesheet" href="{{ asset('template/styles/style.css') }}">
+        
     </head>
 
     <body>
@@ -190,25 +182,8 @@
         @yield('content')
         
     </body>
-        <!-- Vendor scripts -->
-    <script src="{{ asset('template/vendor/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/jquery-ui/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/slimScroll/jquery.slimscroll.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/jquery-flot/jquery.flot.js') }}"></script>
-    <script src="{{ asset('template/vendor/jquery-flot/jquery.flot.resize.js') }}"></script>
-    <script src="{{ asset('template/vendor/jquery-flot/jquery.flot.pie.js') }}"></script>
-    <script src="{{ asset('template/vendor/flot.curvedlines/curvedLines.js') }}"></script>
-    <script src="{{ asset('template/vendor/jquery.flot.spline/index.js') }}"></script>
-    <script src="{{ asset('template/vendor/metisMenu/dist/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/iCheck/icheck.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/peity/jquery.peity.min.js') }}"></script>
-    <script src="{{ asset('template/vendor/sparkline/index.js') }}"></script>
-
-    <!-- App scripts -->
-    <script src="{{ asset('template/scripts/homer.js') }}"></script>
-    <script src="{{ asset('template/scripts/charts.js') }}"></script>
-    <script type="{{ asset('template/text/javascript') }}"></script>
+        <!-- include js file -->
+        @include('links.js')
     <script>
 
     $(function () {

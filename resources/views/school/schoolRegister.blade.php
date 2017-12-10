@@ -1,7 +1,7 @@
 @extends('layouts.landingMaster')
 
 @section('title')
-    dashboard
+    Registration
 @endsection
 
 @section('content')
@@ -89,31 +89,47 @@
 @push('scripts')
 
 <script type="text/javascript">
+    //  Trigger change event on page load
     $(document).ready(function(){
-        alert();
         $('#select-district').trigger('change');
 
     });
-    function getdistricts(ds){
-    var key=$(ds).val();
-    $.ajax({
-        type: "POST",
-       //url: APP_URL + '/get/districts',
-        data: { _token: $('meta[name="csrf-token"]').attr('content'),key:key },
-        url: "{{ route('districts')}}",
-        success : function(data){
-            console.log(data);
-            // $('#districts').empty();
-            // $('<option value="">Select Area</option>').appendTo('#location');
-            //  $.each(data, function (key,value) {
-            //     console.log(key,value);
-            //     $('<option value="'+key+'"> '+ value+' </option>').appendTo('#location');
-                
-            // });
 
-        }          
-    });
-}
+    // function getdistricts(ds){
+    //     var key=$(ds).val();
+    //     alert(key);
+    //         $.ajax({
+    //             type: "POST",
+    //             data: { _token: $('meta[name="csrf-token"]').attr('content') },
+    //             url : "{{ route('districts') }}/"+key,
+               
+    //             success : function(data){
+    //                 alert('success');
+    //             }
+    //             //});
+    //         });
+    // }                    
+   // var key=$(ds).val();
+   // var APP_URL = $('meta[name="_base_url"]').attr('content');
+   // alert(APP_URL)
+    // $.ajax({
+    //     type: "POST",
+    //     data: { _token: $('meta[name="csrf-token"]').attr('content')},
+    //     //url: APP_URL + '/get/districts',
+    //     url: "{{ route('districts')}}/"+key,
+    //     success : function(data){
+    //         console.log(data);
+    //         // $('#districts').empty();
+    //         // $('<option value="">Select Area</option>').appendTo('#location');
+    //         //  $.each(data, function (key,value) {
+    //         //     console.log(key,value);
+    //         //     $('<option value="'+key+'"> '+ value+' </option>').appendTo('#location');
+                
+    //         // });
+
+    //     }          
+    // });
+// }
     
 </script>
 @endpush

@@ -24,8 +24,18 @@ Route::get('student/register',[
 	'as' => 'student.register',
 	'uses' => 'Student\StudentRegisterController@index'
 ]);
-Route::post('get/districts',[
+Route::get('get/districts/{key?}',[
 	'as' => 'districts',
 	'uses' => 'School\SchoolRegisterController@districts'
+]);
+
+Route::get('school/part/two/registration',[
+	'as' => 'school.part.two.registration.form',
+	'uses' => 'School\SchoolRegisterController@partTwoSchoolRegistrationForm'
+]);
+
+Route::post('school/part/two/registration',[
+	'as' => 'school.part.two.registration.save',
+	'uses' => 'School\SchoolRegisterController@partTwoSchoolRegistrationSave'
 ]);
 

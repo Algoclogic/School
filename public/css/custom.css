@@ -3,10 +3,23 @@
 }
 .margin-tenpx-top a{
     margin:15px 0 -12px 4px; 
-    }
+}
 .margin-tenpx-top label:hover{
     color:#0F0;
     text-decoration: underline;
+}
+.tblue{
+	color:#3498db;
+	text-size:14px;
+}
+.u{
+	text-decoration: underline;
+}
+.b{
+	font-weight: bold;
+}
+.tred{
+	color:red;
 }
 
 /*.bg-light #collapseOne{
