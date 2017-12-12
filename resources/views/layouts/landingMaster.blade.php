@@ -32,16 +32,16 @@
 
 <script type="text/javascript">
     $(".js-divisions").select2();
-        $(document).ready(function () {
+    $(document).ready(function () {
 
-            $('#ei-slider').eislideshow({
-                easing : 'easeOutExpo',
-                titleeasing : 'easeOutExpo',
-                titlespeed : 1200,
-                thumbMaxWidth : 120
-            });
-
+        $('#ei-slider').eislideshow({
+            easing : 'easeOutExpo',
+            titleeasing : 'easeOutExpo',
+            titlespeed : 1200,
+            thumbMaxWidth : 120
         });
+
+    });
 
 </script>
 

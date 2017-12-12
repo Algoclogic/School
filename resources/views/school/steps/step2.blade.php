@@ -26,11 +26,12 @@
                                     <div class="col-md-12">
                                         <span class="tblue">Main Subjects</span>
                                     </div>
-                                 @foreach($subject_9th as $sub)
-                                     <div class="checkbox">
-                                      <label><input type="checkbox" value="">{{$sub}}</label>
-                                    </div>
-                                 @endforeach
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($subject_9th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
+                                 
                                 </div> 
 
 
@@ -38,23 +39,21 @@
                                     <div class="col-md-12">
                                         <span class="tblue">Optional Subjects</span>
                                     </div>
-
-                                   @foreach($optional_9th as $sub)
-                                         <div class="checkbox">
-                                          <label><input type="checkbox" value="">{{$sub}}</label>
-                                        </div>
-                                   @endforeach
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($optional_9th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
                                 </div> 
                                 <div class="col-lg-3">
                                     <div class="col-md-12">
-                                    <span class="tblue">Vocational Subjects</span>
+                                        <span class="tblue">Vocational Subjects</span>
                                     </div>
-
-                                    @foreach($vocational_9th as $sub)
-                                     <div class="checkbox">
-                                      <label><input type="checkbox" value="">{{$sub}}</label>
-                                     </div>
-                                   @endforeach
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($vocational_9th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
                                 </div> 
                                 <div class="col-lg-3">
                                     <div class="row">
@@ -95,40 +94,36 @@
                             <div class="col-lg-12">
                                 <div class="col-lg-3">
                                     <div class="col-md-12">
-                                    <span class="tblue">Main Subjects</span>
+                                        <span class="tblue">Main Subjects</span>
                                     </div>
-
-                                    @foreach($subject_10th as $sub)
-                                     <div class="checkbox">
-                                      <label><input type="checkbox" value="">{{$sub}}</label>
-                                     </div>
-                                   @endforeach
-
-
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($subject_10th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
                                 </div> 
 
                                 <div class="col-lg-3">
                                      <div class="col-md-12">
                                         <span class="tblue">Optional Subjects</span>
-                                        </div>
-
-                                        @foreach($optional_10th as $sub)
-                                         <div class="checkbox">
-                                          <label><input type="checkbox" value="">{{$sub}}</label>
-                                     </div>
-                                   @endforeach                      
+                                    </div>
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($optional_10th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
+                                                              
                                 </div> 
 
                                 <div class="col-lg-3">
                                     <div class="col-md-12">
-                                    <span class="tblue">Vocational Subjects</span>
+                                        <span class="tblue">Vocational Subjects</span>
                                     </div>
-
-                                    @foreach($vocational_10th as $sub)
-                                     <div class="checkbox">
-                                      <label><input type="checkbox" value="">{{$sub}}</label>
-                                     </div>
-                                   @endforeach
+                                    <select id="select-district" class="form-control selectize" name="" onChange="" multiple>
+                                        @foreach($vocational_10th as $key => $value)
+                                        <option value="{{ $key}}" >{{ strtoupper($value)}}</option>
+                                        @endforeach
+                                    </select>
                                 </div> 
                                 <div class="col-lg-3">
                                     <div class="row">
